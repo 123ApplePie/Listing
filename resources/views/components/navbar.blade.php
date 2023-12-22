@@ -13,5 +13,7 @@
         <a href="" class="hover:text-[#f84525]" style="--i:2;">Over Ons</a>
         <a href="/contact" class="hover:text-[#f84525]" style="--i:3;">Contact</a>
         <a href="" class="bg-[#f84525] px-4 py-2 rounded-3xl" style="--i:4;"><i class='bx bx-plus-circle'></i> Registreren</a>
+
+        
     </nav>
 </header>
