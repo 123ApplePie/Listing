@@ -23,7 +23,7 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body>
+    <body class="bg-[#f8f4f3]">
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
