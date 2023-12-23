@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('guest.index');
 });
 
+Route::view('/map','guest.map');
+
 // Route::middleware([
 //     'auth:sanctum',
 //     config('jetstream.auth_session'),
