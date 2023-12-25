@@ -18,14 +18,18 @@
         <script src="https://cdn.tailwindcss.com"></script>
         
         <!-- Links -->
-        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="/css/header.css">
 
         <!-- Styles -->
         @livewireStyles
     </head>
     <body class="bg-[#f8f4f3]">
-        <div class="font-sans text-gray-900 antialiased">
+        <div class="font-sans antialiased">
+            <x-navbar/>
+
             {{ $slot }}
+
+            <x-footer/>
         </div>
 
         @livewireScripts

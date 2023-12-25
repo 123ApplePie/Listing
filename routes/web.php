@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +19,8 @@ Route::get('/', function () {
 });
 
 Route::view('/map','guest.map');
+Route::view('/contact','guest.contact');
+Route::get('/details/{id}',[IndexController::class,'details']);
 
 // Route::middleware([
 //     'auth:sanctum',

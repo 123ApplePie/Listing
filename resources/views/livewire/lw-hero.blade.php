@@ -14,11 +14,11 @@
                         <option value="{{ $region['region_code'] }}">{{ $region['region'] }}</option>
                     @endforeach
                 </select>
-                <select name="" id="" class="block p-4 pl-10 w-1/2 text-sm text-white bg-[#f84525] rounded-tr-lg border-4 border-white shadow-md">
+                <select name="" id="" wire:model.live.debounce="stad" class="block p-4 pl-10 w-1/2 text-sm text-white bg-[#f84525] rounded-tr-lg border-4 border-white shadow-md">
                     <option value="">--Stad--</option>
                     @if (!empty($provincie))
                         @foreach ($cities as $city)
-                            <option value="">{{ $city['accentcity'] }}</option>      
+                            <option value="{{ $city['id'] }}">{{ $city['accentcity'] }}</option>      
                         @endforeach
                     @endif
                 </select>
@@ -49,19 +49,39 @@
                         </div>
                     </div>
                 </a>
-                
-                <div class="w-full flex p-3 pl-4 items-center hover:bg-red-100 rounded-lg cursor-pointer">
-                    <div class="mr-4">
-                    </div>
-                    <div>
-                        <div class="font-bold text-lg">John Doe</div>
-                        <div class="text-xs text-gray-500">
-                            <span class="mr-2">No: 007886</span>
-                            <span class="mr-2">gender: man</span>
-                            <span class="mr-2">hobby: skiing</span>
+                <hr>
+                @if (!empty($stad) || !empty($search))
+                <span class="pl-4 italic text-[#f84525]">Resultaat: {{ count($results) }} gevonden</span>
+                    @foreach ($results as $result)
+                    <a href="{{ '/details/'.$result['id'] }}" class="w-full flex p-3 pl-4 items-center hover:bg-red-100 rounded-lg cursor-pointer">
+                        <div  class="flex items-center">
+                            <div class="mr-4">
+                            </div>
+                            <div>
+                                <div class="font-bold text-lg">{{ $result['company'] }}</div>
+                                <div class="text-xs text-gray-500">
+                                    <span class="mr-2">Adres: {{ $result['street'] }} {{ $result['street_no'] }}</span>
+                                    <span class="mr-2">gender: man</span>
+                                    <span class="mr-2">Telefoon: {{ $result['phone'] }}</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </a>
+    
+                    {{-- <div class="w-full flex p-3 pl-4 items-center hover:bg-red-100 rounded-lg cursor-pointer">
+                        <div class="mr-4">
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">{{ $result['company'] }}</div>
+                            <div class="text-xs text-gray-500">
+                                <span class="mr-2">No: 007886</span>
+                                <span class="mr-2">gender: man</span>
+                                <span class="mr-2">hobby: skiing</span>
+                            </div>
+                        </div>
+                    </div> --}}
+                    @endforeach
+                @endif
             </div>
         </div>
     </div>
