@@ -19,6 +19,8 @@ Route::get('/', function () {
 });
 
 Route::view('/map','guest.map');
+Route::view('/test','test');
+
 Route::view('/contact','guest.contact');
 Route::get('/details/{id}',[IndexController::class,'details']);
 

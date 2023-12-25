@@ -54,10 +54,10 @@
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
-        // a marker at the user's current location
+        // Add a marker at the user's current location
         var marker = L.marker([latitude, longitude]).addTo(map);
 
-        // red circle with a radius of 20 km
+        // Add a red circle with a radius of 20 km
         var circle = L.circle([latitude, longitude], {
             color: 'red',
             fillColor: '#f03',
