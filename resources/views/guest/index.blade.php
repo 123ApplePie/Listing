@@ -180,19 +180,67 @@
     {{-- END SERVICE --}}
 
 
-    <section class="">
-        <div class="bg-white h-screen bg-cover bg-center flex justify-items-center items-center">
-          <div class="px-10 lg:px-32 xl:px-40">
-            <h1 class="text-6xl font-semibold font-serif mb-6">
-              <spian class="text-red-500">Jouw directe lijn</spian> <br />
-              <span> naar deskundige dierenzorg!</span>
-            </h1>
-            <p class="text-lg max-w-md">Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.</p>
-            {{-- <button class="inline-block mt-10 px-10 py-3 bg-red-500 text-lg text-white font-semibold">Shop Now</button> --}}
+    <section class="relative py-32 lg:py-36 bg-white">
+      <div
+          class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-10 lg:gap-12">
+          <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 hidden lg:block">
+              <span
+                  class="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-[#f84525] blur-xl opacity-60 lg:opacity-95 lg:block hidden"></span>
+              <span class="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-blue-600 blur-xl opacity-80"></span>
           </div>
-        </div>
-      </section>
-
+          <span
+              class="w-4/12 lg:w-2/12 aspect-square  absolute -top-5 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
+          <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 
+              lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
+  
+              <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl xl:text-6xl
+              font-bold text-[#1e3a8a]">
+                  <span class="text-[#f84525] bg-clip-text">Jouw directe lijn </span>
+                      naar deskundige dierenzorg!
+              </h1>
+              {{-- <p class="mt-8 text-gray-700">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores repellat perspiciatis aspernatur
+                  quis voluptatum porro incidunt,
+                  libero sequi quos eos velit
+              </p> --}}
+              {{-- <div class="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
+                  <div class="flex sm:flex-row flex-col gap-5 w-full">
+                      <form action="#"
+                          class="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-gray-600 shadow-lg shadow-gray-200/20
+                              border border-gray-200 bg-gray-100 rounded-full ease-linear focus-within:bg-white  focus-within:border-blue-600">
+                          <span class="min-w-max pr-2 border-r border-gray-200">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24"
+                                  stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                  <path stroke-linecap="round" stroke-linejoin="round"
+                                      d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
+                              </svg>
+                          </span>
+                          <input type="email" name="" id="" placeholder="johndoe@gmail.com"
+                              class="w-full py-3 outline-none bg-transparent">
+                          <button class="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
+                                  after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#172554] hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]">
+                              <span class="hidden sm:flex relative z-[5]">
+                                  Get Started
+                              </span>
+                              <span class="flex sm:hidden relative z-[5]">
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                      stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                      <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                                  </svg>
+                              </span>
+                          </button>
+                      </form>
+                  </div>
+              </div> --}}
+          </div>
+          <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+              <img src="https://dierenartsenkringhaaglanden.nl/images/vets/hero/hero-dierenkliniek-wassenaar.jpg" alt="Hero image" width="2350" height="2359"
+                  class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
+          </div>
+      </div>
+  </section>
+  
 
 {{-- KAART --}}
 <div class="flex flex-wrap -mx-4 mt-24">
@@ -453,5 +501,107 @@ onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor(
 <x-faq/>
 {{-- END FAQ --}}
 
-  
+<div class="w-full py-24 flex flex-col items-center justify-center gap-8">
+  <h1 class="text-4xl text-gray-600 leading-relaxed text-center w-4/5">
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+  </h1>
+  <div class="flex items-center gap-4">
+      <div class="rounded-full w-12 h-12 bg-black overflow-hidden">
+          <img src="https://rairaksa.github.io/assets/img/rai.jpg"/>
+      </div>
+      <div class="flex flex-col tracking-wider">
+          <label class="text-gray-600 font-bold text-base">Rai Raksa Muhamad</label>
+          <label class="text-gray-400 font-normal text-sm">Fullstack PHP Developer</label>
+      </div>
+  </div>
+</div>
+
+
+{{-- BLOG --}}
+<div class="text-gray-900 bg-white pt-12 pr-0 pb-14 pl-0">
+  <div class="w-full pt-4 pr-5 pb-6 pl-5 mt-0 mr-auto mb-0 ml-auto space-y-5 sm:py-8 md:py-12 sm:space-y-8 md:space-y-16
+      max-w-7xl">
+    <div class="flex flex-col items-center sm:px-5 md:flex-row">
+      <div class="flex flex-col items-start justify-center w-full h-full pt-6 pr-0 pb-6 pl-0 mb-6 md:mb-0 md:w-1/2">
+        <div class="flex flex-col items-start justify-center h-full space-y-3 transform md:pr-10 lg:pr-16
+            md:space-y-5">
+          <div class="bg-[#f84525] flex items-center leading-none rounded-full text-gray-50 pt-1.5 pr-3 pb-1.5 pl-2
+              uppercase inline-block">
+            <p class="inline">
+              <svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewbox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0
+                  00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755
+                  1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1
+                  0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </p>
+            <p class="inline text-xs font-medium">Nieuw</p>
+          </div>
+          <a class="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl">Ontdek ons laatste nieuws en artikelen</a>
+          <div class="pt-2 pr-0 pb-0 pl-0">
+            <p class="text-sm font-medium inline">author:</p>
+            <a class="inline text-sm font-medium mt-0 mr-1 mb-0 ml-1 underline">Jack Sparrow</a>
+            <p class="inline text-sm font-medium mt-0 mr-1 mb-0 ml-1">· 23rd, April 2021 ·</p>
+            <p class="text-gray-200 text-sm font-medium inline mt-0 mr-1 mb-0 ml-1">1hr 20min. read</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <div class="block">
+          <img
+              src="https://images.unsplash.com/photo-1626314928277-1d373ddb6428?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mzd8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="object-cover rounded-lg max-h-64 sm:max-h-96 btn- w-full h-full"/>
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-12 sm:px-5 gap-x-8 gap-y-16">
+      <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
+        <img
+            src="https://images.unsplash.com/photo-1626318305863-bb23d0297c0b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-"/>
+        <p class="bg-[#f84525] flex items-center leading-none text-sm font-medium text-gray-50 pt-1.5 pr-3 pb-1.5 pl-3
+            rounded-full uppercase inline-block">Entertainment</p>
+        <a class="text-lg font-bold sm:text-xl md:text-2xl">Improving your day to the MAX</a>
+        <p class="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="pt-2 pr-0 pb-0 pl-0">
+          <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline">Jack Sparrow</a>
+          <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">· 23rd, March 2021 ·</p>
+          <p class="inline text-xs font-medium text-gray-300 mt-0 mr-1 mb-0 ml-1">1hr 20min. read</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
+        <img
+            src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-"/>
+        <p class="bg-[#f84525] flex items-center leading-none text-sm font-medium text-gray-50 pt-1.5 pr-3 pb-1.5 pl-3
+            rounded-full uppercase inline-block">Entertainment</p>
+        <a class="text-lg font-bold sm:text-xl md:text-2xl">Improving your day to the MAX</a>
+        <p class="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="pt-2 pr-0 pb-0 pl-0">
+          <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline">Jack Sparrow</a>
+          <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">· 23rd, March 2021 ·</p>
+          <p class="inline text-xs font-medium text-gray-300 mt-0 mr-1 mb-0 ml-1">1hr 20min. read</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
+        <img
+            src="https://images.unsplash.com/photo-1626197031507-c17099753214?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzR8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-"/>
+        <p class="bg-[#f84525] flex items-center leading-none text-sm font-medium text-gray-50 pt-1.5 pr-3 pb-1.5 pl-3
+            rounded-full uppercase inline-block">Entertainment</p>
+        <a class="text-lg font-bold sm:text-xl md:text-2xl">Improving your day to the MAX</a>
+        <p class="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="pt-2 pr-0 pb-0 pl-0">
+          <a class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-0 underline">Jack Sparrow</a>
+          <p class="inline text-xs font-medium mt-0 mr-1 mb-0 ml-1">· 23rd, March 2021 ·</p>
+          <p class="inline text-xs font-medium text-gray-300 mt-0 mr-1 mb-0 ml-1">1hr 20min. read</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <a href="/blog" class="bg-[#f84525] hover:bg-red-700 px-4 py-2 text-white rounded-3xl">Meer Blogs</a>
+  </center>
+</div>
+{{-- END BLOG --}}
+
 </x-guest-layout>

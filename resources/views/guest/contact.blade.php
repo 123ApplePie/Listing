@@ -8,9 +8,9 @@
       <div class="mx-auto relative z-10 mt-24 flex flex-col items-center">
         <!-- Container div with margin, positioning, z-index, and flex properties -->
         
-        <div class="w-1/2">
+        <div class="flex justify-center items-center">
             <!-- Child div with width set to half the parent's width -->
-            <p class="text-lg font-medium text-white bg-[#f84525] rounded-3xl">
+            <p class="px-4 py-2 text-lg font-medium text-white bg-[#f84525] rounded-3xl">
                 Contact Ons
             </p>
             <!-- Paragraph with text styling, background color, and rounded corners -->
