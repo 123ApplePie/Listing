@@ -18,9 +18,10 @@ Route::get('/', function () {
     return view('guest.index');
 });
 
-Route::view('/map','guest.map');
+Route::get('/map',[IndexController::class,'map']);
 Route::view('/test','test');
 Route::view('/blog','guest.blog');
+Route::view('/about','guest.about');
 
 Route::view('/contact','guest.contact');
 Route::get('/details/{id}',[IndexController::class,'details']);

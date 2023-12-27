@@ -1,0 +1,8 @@
+CBB location is:
+Latitude: 5.8115564
+Longitude: -55.2104001
+
+
+Home location is:
+Latitude: 5.855121
+Longitude: -55.25992

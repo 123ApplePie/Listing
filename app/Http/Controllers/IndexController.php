@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Company;
+use App\Models\City;
 
 class IndexController extends Controller
 {
@@ -15,6 +16,16 @@ class IndexController extends Controller
 
         return view('guest.details',[
             'info'=>$info
+        ]);
+    }
+
+    public function map() {
+        $cities = City::all();
+        $companies = Company::all();
+
+        return view('guest.map',[
+            'cities'=>$cities,
+            'companies'=>$companies
         ]);
     }
 }
