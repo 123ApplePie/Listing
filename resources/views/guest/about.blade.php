@@ -43,13 +43,26 @@
                          
                         Over Ons
                     </p>
-                    <h2 class="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug">
+                    {{-- <h2 class="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug">
                         We make you look
                         <span class="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate__animated animate__flash">different</span>
-                    </h2>
-                    <p class="text-base text-gray-700">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque it.</p>
-                    <div class="mt-10 flex flex-col items-center md:flex-row">
+                    </h2> --}}
+                    <p class="text-base text-gray-700">
+                        Welkom! <br><br>
+
+                        Wij begrijpen hoe belangrijk het welzijn van je huisdier voor jou is. Daarom hebben we ons toegewijd aan het vereenvoudigen van het proces om een betrouwbare dierenarts te vinden, waar dan ook in Nederland. Onze missie is om eigenaren van gezelschapsdieren te helpen snel en moeiteloos toegang te krijgen tot hoogwaardige dierenzorg, zodat jouw harige vriend de beste medische aandacht kan krijgen die hij verdient.
+                        <br><br>
+                        Wat maakt ons uniek? We hebben een uitgebreid netwerk van dierenartspraktijken in heel Nederland samengebracht, waardoor we een gevarieerde selectie van hooggekwalificeerde professionals kunnen aanbieden. Of je nu op zoek bent naar algemene gezondheidscontroles, vaccinaties, spoedeisende zorg of gespecialiseerde behandelingen, wij staan klaar om je te helpen de perfecte dierenarts te vinden die aan de specifieke behoeften van jouw huisdier voldoet.
+                        <br><br>
+                        Onze gebruiksvriendelijke website maakt het eenvoudig om de juiste dierenarts te vinden op basis van locatie, specialiteit en beoordelingen van andere huisdierenouders. We geloven dat het proces van het vinden van de juiste zorg voor je huisdier net zo zorgeloos zou moeten zijn als de liefde die je voor hen voelt.
+                        <br><br>
+                        Bij ons streven we ernaar om een brug te slaan tussen huisdieren en hun gezondheidsgeluk. We begrijpen dat jouw huisdier deel uitmaakt van je familie, en we zijn er trots op om een rol te spelen in het garanderen van hun welzijn. Samen bouwen we aan een gemeenschap van zorgzame huisdierenouders die weten waar ze betrouwbare dierenartsenzorg kunnen vinden, altijd en overal in Nederland.
+                        <br><br>
+                        Dank je wel dat je voor ons hebt gekozen om de gezondheid en het geluk van je huisdier te waarborgen. We kijken ernaar uit om je te assisteren bij het vinden van de perfecte dierenarts die de beste zorg biedt voor je harige metgezel.
+                        <br><br>
+                        Met liefde voor dieren
+                    </p>
+                    {{-- <div class="mt-10 flex flex-col items-center md:flex-row">
                         <a href="/" class="mb-3 inline-flex h-12 w-full items-center justify-center rounded bg-green-600 px-6 font-medium tracking-wide text-white shadow-md transition hover:bg-blue-800 focus:outline-none md:mr-4 md:mb-0 md:w-auto">
                             View More</a>
                         <a href="/" aria-label="" class="group inline-flex items-center font-semibold text-g1">Watch how
@@ -58,7 +71,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
                         </a>
-                    </div>
+                    </div> --}}
                 </div>
                 
                
@@ -68,7 +81,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M16 17l-4 4m0 0l-4-4m4 4V3"></path>
                 </svg>
                 <div class="abg-orange-400 mx-auto w-fit overflow-hidden rounded-[6rem] rounded-br-none rounded-tl-none">
-                     <img src="https://placehold.co/400x400">
+                     <img src="https://www.dierenkliniekalmerestad.nl/wp-content/uploads/2020/10/Sandra-Dierenkliniek-Almere-Stad-1024x1024.jpg">
                 </div>
             </div>
         </div>

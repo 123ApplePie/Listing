@@ -7,9 +7,9 @@
         <div class="mx-auto relative z-10 mt-24 flex flex-col items-center">
           <!-- Container div with margin, positioning, z-index, and flex properties -->
           
-          <div class="w-1/2">
+          <div class="flex justify-center items-center2">
               <!-- Child div with width set to half the parent's width -->
-              <p class="text-lg font-medium text-white bg-[#f84525] rounded-3xl">
+              <p class="x-4 py-2 text-lg font-medium text-white bg-[#f84525] rounded-3xl">
                   Details
               </p>
               <!-- Paragraph with text styling, background color, and rounded corners -->
@@ -80,9 +80,9 @@
       <div>
         {{-- <p class="xl:pr-48 text-base lg:leading-tight leading-normal text-gray-600 dark:text-gray-300 mt-7">It is a long established fact that a reader will be distracted by thereadable content of a page when looking at its layout. The point of usingLorem Ipsum is that it has a more-or-less normal distribution of letters.</p> --}}
         <p class="text-base leading-4 mt-7 text-gray-600 dark:text-gray-300">Adres: {{ $info[0]['street'] }} {{ $info[0]['street_no'] }}</p>
-        <p class="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Postcode: {{ $info[0]['zip'] }}</p>
-        <p class="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Plaats: {{ $info[0]['city_rel']['accentcity'] }}</p>
-        <p class="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Provincie: {{ $info[0]['city_rel']['regio_rel']['region'] }}</p>
+        <p class="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Postcode: {{ $info[0]['zip'] ?? ''}}</p>
+        <p class="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Plaats: {{ $info[0]['city_rel']['accentcity'] ?? ''}}</p>
+        <p class="text-base leading-4 mt-4 text-gray-600 dark:text-gray-300">Provincie: {{ $info[0]['city_rel']['regio_rel']['region'] ?? ''}}</p>
         <p class="md:w-96 text-base leading-normal text-gray-600 dark:text-gray-300 mt-4">Nederland</p>
       </div>
       {{-- <div>

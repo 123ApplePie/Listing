@@ -28,7 +28,7 @@
                 <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg>                
                 </div>
-                <input wire:model.live.lazy="search" type="search" id="default-search" class="block p-4 pl-10 w-full text-sm text-gray-900 bg-white rounded-bl-lg rounded-r-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Naam, Telefoon, Adres, ZIP-code..." autocomplete="off">
+                <input wire:model.live.debounce="search" type="search" id="default-search" class="block p-4 pl-10 w-full text-sm text-gray-900 bg-white rounded-bl-lg rounded-r-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Naam, Telefoon, Adres, ZIP-code..." autocomplete="off">
                 <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-[#f84525] hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-[#f84525] font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Zoeken</button>
             </div>        
 
@@ -61,25 +61,11 @@
                                 <div class="font-bold text-lg">{{ $result['company'] }}</div>
                                 <div class="text-xs text-gray-500">
                                     <span class="mr-2">Adres: {{ $result['street'] }} {{ $result['street_no'] }}</span>
-                                    <span class="mr-2">gender: man</span>
                                     <span class="mr-2">Telefoon: {{ $result['phone'] }}</span>
                                 </div>
                             </div>
                         </div>
                     </a>
-    
-                    {{-- <div class="w-full flex p-3 pl-4 items-center hover:bg-red-100 rounded-lg cursor-pointer">
-                        <div class="mr-4">
-                        </div>
-                        <div>
-                            <div class="font-bold text-lg">{{ $result['company'] }}</div>
-                            <div class="text-xs text-gray-500">
-                                <span class="mr-2">No: 007886</span>
-                                <span class="mr-2">gender: man</span>
-                                <span class="mr-2">hobby: skiing</span>
-                            </div>
-                        </div>
-                    </div> --}}
                     @endforeach
                 @endif
             </div>
@@ -115,6 +101,11 @@
             if (!isClickInsideInput && !isClickInsideButton && !isClickInsideResult) {
                 hideResults();
             }
+        });
+
+        // Event listener for button click to show results
+        searchButton.addEventListener('click', function (event) {
+            showResults();
         });
     });
 </script>
