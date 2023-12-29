@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Company;
 use App\Models\City;
+use App\Models\Region;
 
 class IndexController extends Controller
 {
@@ -26,6 +27,16 @@ class IndexController extends Controller
         return view('guest.map',[
             'cities'=>$cities,
             'companies'=>$companies
+        ]);
+    }
+
+    public function provincie($slug){
+        $region = Region::where('slug',$slug)->get();
+        $region_code = $region[0]['region_code'];
+        // dd($region_code);
+
+        return view('guest.provincie',[
+            'region_code'=>$region_code
         ]);
     }
 }

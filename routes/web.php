@@ -26,6 +26,8 @@ Route::view('/about','guest.about');
 Route::view('/contact','guest.contact');
 Route::get('/details/{id}',[IndexController::class,'details']);
 
+Route::get('/{slug}',[IndexController::class,'provincie']);
+
 // Route::middleware([
 //     'auth:sanctum',
 //     config('jetstream.auth_session'),

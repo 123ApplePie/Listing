@@ -243,259 +243,8 @@
   
 
 {{-- KAART --}}
-<div class="flex flex-wrap -mx-4 mt-24">
-    <div class="w-full px-4">
-       <div class="text-center mx-auto mb-8 lg:mb-12 max-w-[510px]">
-          <span class="font-semibold text-2xl text-[#f84525] mb-2 block">
-          Landelijke Footprint
-          </span>
-          <h2
-             class="
-             font-bold
-             text-3xl
-             sm:text-4xl
-             md:text-[40px]
-             text-[#1e3a8a]
-             mb-4
-             "
-             >
-             Verstrekking van veterinaire zorg in alle provincies van Nederland.
-          </h2>
-          <p class="text-base text-body-color">
-              Statistieken
-          </p>
-       </div>
-    </div>
-  </div>
-  
-  <div class="flex flex-wrap">
-    <div class="w-full sm:w-1/4 md:w-1/6 lg:w-1/6 p-4">
-      <div class="flex items-center justify-center">
-        <ul>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">80</p>
-              <p id="groningen-text" class="text-xl leading-4 text-[#f84525]">Groningen</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">60</p>
-              <p id="friesland-text" class="text-xl leading-4 text-[#f84525]">Friesland</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">55</p>
-              <p id="drenthe-text" class="text-xl leading-4 text-[#f84525]">Drenthe</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">30</p>
-              <p id="overijssel-text" class="text-xl leading-4 text-[#f84525]">Overijssel</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">25</p>
-              <p id="flevoland-text" class="text-xl leading-4 text-[#f84525]">Flevoland</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">35</p>
-              <p id="gelderland-text" class="text-xl leading-4 text-[#f84525]">Gelderland</p>
-            </div>            
-          </li>
-        </ul>
-      </div>
-    </div>
-  
-  <div class="w-full sm:w-1/2 md:w-2/3 lg:w-2/3 p-4">
-    <div class="relative flex items-center justify-center">
-  <div style="position: relative;">
-    <div>
-      <center>
-        <img src="img/vector.png"  class="w-3/4" alt="">
-      </center>
-      <button id="limburg-button" style="position: absolute; top: 75%; left: 60%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-      onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('limburg-text', true);"
-      onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('limburg-text', false);"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-        <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-      </svg>
-    </button>
-
-    <button id="brabant-button" style="position: absolute; top: 65%; left: 50%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-    onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('brabant-text', true);"
-    onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('brabant-text', false);"
-  >
-    <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-      <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-    </svg>
-  </button>
-
-  <button id="zeeland-button" style="position: absolute; top: 65%; left: 25%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-  onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('zeeland-text', true);"
-  onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('zeeland-text', false);"
->
-  <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-    <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-  </svg>
- </button>
-
- <button id="zholland-button" style="position: absolute; top: 50%; left: 35%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
- onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('zholland-text', true);"
- onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('zholland-text', false);"
->
- <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-   <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
- </svg>
-</button>
-
-<button id="nholland-button" style="position: absolute; top: 30%; left: 42%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('nholland-text', true);"
-onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('nholland-text', false);"
->
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-  <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-</svg>
-</button>
-
-<button id="utrecht-button" style="position: absolute; top: 45%; left: 48%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('utrecht-text', true);"
-onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('utrecht-text', false);"
->
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-  <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-</svg>
-</button>
-
-<button id="gelderland-button" style="position: absolute; top: 47%; left: 63%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('gelderland-text', true);"
-onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('gelderland-text', false);"
->
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-  <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-</svg>
-</button>
-
-<button id="flevoland-button" style="position: absolute; top: 35%; left: 53%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('flevoland-text', true);"
-onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('flevoland-text', false);"
->
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-  <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-</svg>
-</button>
-
-<button id="overijssel-button" style="position: absolute; top: 35%; left: 70%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('overijssel-text', true);"
-onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('overijssel-text', false);"
->
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-  <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-</svg>
-</button>
-
-<button id="drenthe-button" style="position: absolute; top: 22%; left: 70%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('drenthe-text', true);"
-onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('drenthe-text', false);"
->
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-  <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-</svg>
-</button>
-
-<button id="friesland-button" style="position: absolute; top: 15%; left: 58%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('friesland-text', true);"
-onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('friesland-text', false);"
->
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-  <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-</svg>
-</button>
-
-<button id="groningen-button" style="position: absolute; top: 7%; left: 70%; transform: translate(-50%, -50%); color: #f84525; text-decoration: none; border-radius: 5px;"
-onmouseover="this.querySelector('svg').style.transform = 'scale(1.2)'; changeColor('groningen-text', true);"
-onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor('groningen-text', false);"
->
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" style="fill: rgba(248, 69, 37, 1);transform: ;msFilter:;">
-  <path d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
-</svg>
-</button>
-
-  
-  </div>
-  </div>
-  </div>
-  </div>
-  
-  <div class="w-full sm:w-1/4 md:w-1/6 lg:w-1/6 p-4">
-      <div class=" flex items-center justify-center">
-        <ul>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">95</p>
-              <p id="utrecht-text" class="text-xl leading-4 text-[#f84525]">Utrecht</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">24</p>
-              <p id="nholland-text" class="text-xl leading-4 text-[#f84525]">Noord-Holland</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">15</p>
-              <p id="zholland-text" class="text-xl leading-4 text-[#f84525]">Zuid-Holland</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">20</p>
-              <p id="zeeland-text" class="text-xl leading-4 text-[#f84525]">Zeeland</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">35</p>
-              <p id="brabant-text" class="text-xl leading-4 text-[#f84525]">Noord-Brabant</p>
-            </div>            
-          </li>
-          <br>
-          <li>
-            <div>
-              <p class="text-6xl font-semibold text-gray-800">30</p>
-                <p id="limburg-text" class="text-xl leading-4 text-[#f84525]">Limburg</p>            
-            </div>            
-          </li>
-        </ul>
-      </div>
-  </div>
-  </div>
-
-  <script>
-    function changeColor(elementId, isHovered) {
-      const element = document.getElementById(elementId);
-      if (element) {
-        element.style.color = isHovered ? 'blue' : '#f84525'; // Change the color as desired
-      }
-    }
-  </script>
-  {{-- END KAART --}}
+  <x-footprint/>
+{{-- END KAART --}}
 
   {{-- FAQ --}}
 <x-faq/>
@@ -536,7 +285,7 @@ onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor(
             </p>
             <p class="inline text-xs font-medium">Nieuw</p>
           </div>
-          <a class="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl">Ontdek ons laatste nieuws en artikelen</a>
+          <a class="text-4xl font-bold leading-none lg:text-5xl xl:text-6xl text-[#1e3a8a]">Ontdek ons laatste nieuws en artikelen</a>
           <div class="pt-2 pr-0 pb-0 pl-0">
             <p class="text-sm font-medium inline">author:</p>
             <a class="inline text-sm font-medium mt-0 mr-1 mb-0 ml-1 underline">Jack Sparrow</a>
@@ -558,7 +307,7 @@ onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor(
             src="https://images.unsplash.com/photo-1626318305863-bb23d0297c0b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-"/>
         <p class="bg-[#f84525] flex items-center leading-none text-sm font-medium text-gray-50 pt-1.5 pr-3 pb-1.5 pl-3
             rounded-full uppercase inline-block">Entertainment</p>
-        <a class="text-lg font-bold sm:text-xl md:text-2xl">Improving your day to the MAX</a>
+        <a class="text-lg font-bold sm:text-xl md:text-2xl text-[#1e3a8a]">Improving your day to the MAX</a>
         <p class="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="pt-2 pr-0 pb-0 pl-0">
@@ -572,7 +321,7 @@ onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor(
             src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-"/>
         <p class="bg-[#f84525] flex items-center leading-none text-sm font-medium text-gray-50 pt-1.5 pr-3 pb-1.5 pl-3
             rounded-full uppercase inline-block">Entertainment</p>
-        <a class="text-lg font-bold sm:text-xl md:text-2xl">Improving your day to the MAX</a>
+        <a class="text-lg font-bold sm:text-xl md:text-2xl text-[#1e3a8a]">Improving your day to the MAX</a>
         <p class="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="pt-2 pr-0 pb-0 pl-0">
@@ -586,7 +335,7 @@ onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor(
             src="https://images.unsplash.com/photo-1626197031507-c17099753214?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzR8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" class="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-"/>
         <p class="bg-[#f84525] flex items-center leading-none text-sm font-medium text-gray-50 pt-1.5 pr-3 pb-1.5 pl-3
             rounded-full uppercase inline-block">Entertainment</p>
-        <a class="text-lg font-bold sm:text-xl md:text-2xl">Improving your day to the MAX</a>
+        <a class="text-lg font-bold sm:text-xl md:text-2xl text-[#1e3a8a]">Improving your day to the MAX</a>
         <p class="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
         <div class="pt-2 pr-0 pb-0 pl-0">

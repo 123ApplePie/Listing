@@ -59,7 +59,27 @@
             opacity: 0;
         }
     }
-</style>
+
+    /* Responsive adjustments */
+ /* Responsive adjustments */
+ @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-link, .btn-register {
+            margin-bottom: 10px;
+        }
+
+        .btn-register {
+            margin-left: 0;
+        }
+
+        .modal-container {
+            width: 90%;
+        }
+    }</style>
 
 <div class="main-modal fixed w-full inset-0 z-50 overflow-hidden flex justify-center items-center animated fadeIn faster" style="background: rgba(0,0,0,.7);">
     <div class="border border-blue-500 shadow-lg modal-container bg-white w-4/12 md:max-w-11/12 mx-auto rounded-xl shadow-lg z-50 overflow-y-auto">
