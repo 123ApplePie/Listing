@@ -10,7 +10,7 @@
           <div class="flex justify-center items-center">
               <!-- Child div with width set to half the parent's width -->
               <p class="px-4 py-2 text-lg font-medium text-white bg-[#f84525] rounded-3xl">
-                  Contact Ons
+                  Listing
               </p>
               <!-- Paragraph with text styling, background color, and rounded corners -->
           </div>
@@ -59,7 +59,7 @@
                         </span>
                         <p class="flex items-center  text-gray-500">
                             <span class="font-semibold mr-2 text-xs uppercase">Provincie:</span>
-                            <span>Jane Doe</span>
+                            <span>{{ $region[0]['region'] }}</span>
                         </p>
                     </div>
     
@@ -74,7 +74,7 @@
                         </span>
                         <p class="flex items-center  text-gray-500">
                             <span class="font-semibold mr-2 text-xs uppercase">Aantal dierenartsen:</span>
-                            <span>26 April 2022</span>
+                            <span>XX</span>
                         </p>
                     </div>
                     {{-- <div class="flex flex-row text-sm">

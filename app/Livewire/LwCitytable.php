@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\City;
+use App\Models\Region;
 
 class LwCitytable extends Component
 {
@@ -20,11 +21,13 @@ class LwCitytable extends Component
         // dd($this->region_code);
 
         if (empty($this->stad)) {
-            $cities = City::where('region',$this->region_code)
+            $cities = City::with('regio_rel')
+                            ->where('region',$this->region_code)
                             ->orderBy('accentcity','asc')
                             ->paginate(20);
         } else {
-            $cities = City::where('region',$this->region_code)
+            $cities = City::with('regio_rel')
+                            ->where('region',$this->region_code)
                             ->where('accentcity', 'LIKE', '%'.$this->stad.'%')
                             ->get();
         }

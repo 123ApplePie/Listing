@@ -27,6 +27,7 @@ Route::view('/contact','guest.contact');
 Route::get('/details/{id}',[IndexController::class,'details']);
 
 Route::get('/{slug}',[IndexController::class,'provincie']);
+Route::get('/{regio_slug}/{city}', [IndexController::class, 'percity']);
 
 // Route::middleware([
 //     'auth:sanctum',

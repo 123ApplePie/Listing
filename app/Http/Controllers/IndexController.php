@@ -36,7 +36,20 @@ class IndexController extends Controller
         // dd($region_code);
 
         return view('guest.provincie',[
-            'region_code'=>$region_code
+            'region_code'=>$region_code,
+            'region'=>$region
+        ]);
+    }
+
+    public function percity($regio_slug, $city){
+        // dd($regio_slug);
+        // dd($city);
+        $regio = $regio_slug;
+        $stad = $city;
+
+        return view('guest.percity',[
+            'regio'=>$regio,
+            'stad'=>$stad
         ]);
     }
 }
