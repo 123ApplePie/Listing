@@ -38,7 +38,7 @@
         </div>
 
         <div x-show="openTab === 1" class="transition-all duration-300 bg-white p-4 rounded-lg shadow-md border-l-4 border-[#f84525]">
-            <h2 class="text-2xl font-semibold mb-2 text-blue-600">De steden in de provincie {{ $region[0]['region'] }}</h2>
+            <h2 class="text-2xl font-semibold mb-2 text-blue-600">De steden in de provincie {{ $region[0]['region'] }} met één of meer dierenartsen </h2>
             <livewire:lw-citytable :region_code="$region_code"/>
         </div>
 

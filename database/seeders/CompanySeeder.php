@@ -18,7 +18,7 @@ class CompanySeeder extends Seeder
 
         foreach (range(1, 2000) as $index) {
             DB::table('companies')->insert([
-                'city_id' => $faker->numberBetween(2025412, 3174017),   //Interval of the cities
+                'city_id' => $faker->randomElement([$faker->numberBetween(2025412, 2034424), 3174010, 3174014, 3174017]),   //Interval of the cities
                 'company' => $faker->company,
                 'phone' => $faker->phoneNumber,
                 'email' => $faker->email,

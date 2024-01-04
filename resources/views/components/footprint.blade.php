@@ -27,15 +27,48 @@
     <div class="w-full sm:w-1/4 md:w-1/6 lg:w-1/6 p-4">
       <div class="flex items-center justify-center">
         <ul>
-          @foreach ($regions_first as $reg_first)
           <li>
-            <a href="{{ '/'.$reg_first['slug'] }}">
-              <p class="text-6xl font-semibold text-gray-800">80</p>
-              <p id="{{ $reg_first['region'].'-text' }}" class="text-xl leading-4 text-[#f84525]">{{ $reg_first['region'] }}</p>
+            <a href="{{ '/drenthe' }}">
+              <p class="text-6xl font-semibold text-gray-800">{{ count($companies_drenthe) }}</p>
+              <p id="" class="text-xl leading-4 text-[#f84525]">Drenthe</p>
             </a>            
           </li>
           <br>
-          @endforeach
+          <li>
+            <a href="{{ '/friesland' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_friesland) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Friesland</p>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ '/gelderland' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_gelderland) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Gelderland</p>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ '/groningen' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_groningen) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Groningen</p>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ '/limburg' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_limburg) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Limburg</p>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ '/noord-brabant' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_noord_brabant) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Noord-Brabant</p>
+            </a>
+        </li>
+          <br>
         </ul>
       </div>
     </div>
@@ -187,16 +220,48 @@ onmouseout="this.querySelector('svg').style.transform = 'scale(1)'; changeColor(
   <div class="w-full sm:w-1/4 md:w-1/6 lg:w-1/6 p-4">
       <div class=" flex items-center justify-center">
         <ul>
-          @foreach ($regions_second as $reg_second)
           <li>
-            <a href="{{ '/'.$reg_second['slug'] }}">
-              <p class="text-6xl font-semibold text-gray-800">80</p>
-              <p id="{{ $reg_second['region'].'-text' }}" class="text-xl leading-4 text-[#f84525]">{{ $reg_second['region'] }}</p>
-            </a>            
-          </li>
-          <br>
-          @endforeach
-        </ul>
+            <a href="{{ '/noord-holland' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_noord_holland) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Noord-Holland</p>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ '/utrecht' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_utrecht) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Utrecht</p>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ '/zeeland' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_zeeland) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Zeeland</p>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ '/zuid-holland' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_zuid_holland) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Zuid-Holland</p>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ '/overijssel' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_overijssel) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Overijssel</p>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="{{ '/flevoland' }}">
+                <p class="text-6xl font-semibold text-gray-800">{{ count($companies_flevoland) }}</p>
+                <p id="" class="text-xl leading-4 text-[#f84525]">Flevoland</p>
+            </a>
+        </li>        
+      </ul>
       </div>
   </div>
   </div>
