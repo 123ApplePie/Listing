@@ -18,8 +18,9 @@
 
                 <div class="flex flex-col items-start mt-5 space-y-2">
                     <p class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Home</p>
-                    <p class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Who We Are</p>
-                    <p class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Our Philosophy</p>
+                    <p class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Blog</p>
+                    <p class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Over Ons</p>
+                    <p class="text-white transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-blue-500">Contact</p>
                 </div>
             </div>
 
@@ -37,10 +38,10 @@
         <hr class="my-6 border-gray-200 md:my-8 dark:border-gray-700 h-2" />
         
         <div class="sm:flex sm:items-center sm:justify-between">
-            <div class="flex flex-1 gap-4 hover:cursor-pointer">
+            {{-- <div class="flex flex-1 gap-4 hover:cursor-pointer">
                 <img src="https://www.svgrepo.com/show/303139/google-play-badge-logo.svg" width="130" height="110" alt="" />
                 <img src="https://www.svgrepo.com/show/303128/download-on-the-app-store-apple-logo.svg" width="130" height="110" alt="" />
-            </div>
+            </div> --}}
             
             <div class="flex gap-4 hover:cursor-pointer">
                 <img src="https://www.svgrepo.com/show/303114/facebook-3-logo.svg" width="30" height="30" alt="fb" />
