@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use Livewire\WithPagination;
 use Livewire\Component;
 use App\Models\Company;
 
@@ -16,6 +17,8 @@ class LwPercity extends Component
         $this->regio = $regio;
         $this->stad = $stad;
     }
+
+    use WithPagination;
 
     public function render()
     {

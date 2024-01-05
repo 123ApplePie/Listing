@@ -50,7 +50,7 @@
 			</table>
 			@if (!empty($stad) && empty($search))
             <div class="ml-4">
-                {{ $companies->links() }}
+                {{ $companies->links(data: ['scrollTo' => false]) }}
             </div>
             @endif
 			@else
