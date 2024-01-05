@@ -13,4 +13,8 @@ class City extends Model
         return $this->belongsTo(Region::class,'region','region_code');
     }
 
+    public function comp_rel() {
+        return $this->hasMany(Company::class,'city_id','id');
+    }
+
 }

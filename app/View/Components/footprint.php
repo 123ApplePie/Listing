@@ -62,7 +62,7 @@ class footprint extends Component
         $companies_limburg = Company::whereIn('city_id', $id_limburg)->get();
 
         // Noord-Brabant (06)
-        $cities_noord_brabant = City::where('region', 06)->get();
+        $cities_noord_brabant = City::where('region', '06')->get();
         foreach ($cities_noord_brabant as $city) {
             $id_noord_brabant[] = $city['id'];
         }

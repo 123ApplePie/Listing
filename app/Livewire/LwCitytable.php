@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use Livewire\WithPagination;
 use Livewire\Component;
 use App\Models\City;
 use App\Models\Region;
@@ -17,6 +18,8 @@ class LwCitytable extends Component
         $this->region_code = $region_code;
     }
 
+    use WithPagination;
+    
     public function render()
     {
 

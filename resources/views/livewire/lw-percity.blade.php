@@ -1,6 +1,8 @@
 
 <div class="mx-8 my-4 table_1">
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg bg-white">
+		@if (count($companies) > 0)
+
 		<div class="p-4">
 			<label for="table-search" class="sr-only">Search</label>
 			<div class="relative mt-1">
@@ -18,24 +20,12 @@
 			<table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 ">
 				<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
 					<tr>
-						{{-- <th scope="col" class="p-4">
-							<div class="flex items-center">
-								<input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-								<label for="checkbox-all-search" class="sr-only">checkbox</label>
-							</div>
-						</th> --}}
 						<th scope="col" class="px-6 py-3">
 							Dierenarts
 						</th>
 						<th scope="col" class="px-6 py-3">
 							Stad
 						</th>
-						{{-- <th scope="col" class="px-6 py-3">
-							Category
-						</th>
-						<th scope="col" class="px-6 py-3">
-							Price
-						</th> --}}
 						<th scope="col" class="px-6 py-3">
 							<span class="sr-only">Edit</span>
 						</th>
@@ -45,24 +35,12 @@
                     @foreach ($companies as $company)
 					<tr
 						class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-						{{-- <td class="w-4 p-4">
-							<div class="flex items-center">
-								<input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-								<label for="checkbox-table-search-1" class="sr-only">checkbox</label>
-							</div>
-						</td> --}}
 						<th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
 							{{ $company['company'] }}
 						</th>
 						<td class="px-6 py-4">
 							{{ $company['city_rel']['accentcity'] }}
 						</td>
-						{{-- <td class="px-6 py-4">
-							Laptop
-						</td>
-						<td class="px-6 py-4">
-							$2999
-						</td> --}}
 						<td class="px-6 py-4 text-right">
 							<a href="{{ '/details/'.$company['id'] }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Meer Informatie</a>
 						</td>
@@ -70,5 +48,20 @@
                     @endforeach
 				</tbody>
 			</table>
+			@if (!empty($stad) && empty($search))
+            <div class="ml-4">
+                {{ $companies->links() }}
+            </div>
+            @endif
+			@else
+				<div class="flex bg-blue-100 rounded-lg p-4 mb-4 text-sm text-blue-700" role="alert">
+					<svg class="w-5 h-5 inline mr-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+					<div>
+						<span class="font-medium">Het spijt ons!</span> Niets gevonden.
+					</div>
+				</div>
+			@endif
+
+
 		</div>
 </div>

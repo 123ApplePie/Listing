@@ -2,18 +2,24 @@
 
 namespace App\Livewire;
 
+use Livewire\WithPagination;
 use Livewire\Component;
 use App\Models\Company;
 
+
 class LwProvincietable extends Component
 {
+
     public $search;
     public $region_code;
 
+    
     public function mount($region_code)
     {
         $this->region_code = $region_code;
     }
+
+    use WithPagination;
 
     public function render()
     {
@@ -25,8 +31,8 @@ class LwProvincietable extends Component
                                 ->whereHas('city_rel', function($q) use($id){$q
                                 ->where('region', '=', $id);
                                 })
-                                ->orderBy('id', 'desc')
-                                ->get();
+                                ->orderBy('company', 'asc')
+                                ->paginate(20);
         } else {
             $id = $this->search;
 
@@ -46,9 +52,3 @@ class LwProvincietable extends Component
 }
 
 
-// $tickets = Ticket::with('gebruiker_relation')
-//                                  ->whereHas('gebruiker_relation', function($q) use($id){$q
-//                                  ->where('werkzaam', '=', $id); 
-//                                 })
-//                                 ->orderBy('id', 'desc')
-//                                 ->get();

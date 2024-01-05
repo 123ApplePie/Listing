@@ -28,7 +28,7 @@ class LwPercity extends Component
                                 ->where('city', '=', $id);
                                 })
                                 ->orderBy('id', 'desc')
-                                ->get();        
+                                ->paginate(20);        
         } else {
             $id = $this->search;
 

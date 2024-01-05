@@ -21,10 +21,10 @@
 				<thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
 					<tr>
 						<th scope="col" class="px-6 py-3">
-							Steden
+							Stad
 						</th>
 						<th scope="col" class="px-6 py-3">
-							Aantallen
+							Aantal
 						</th>
 						{{-- <th scope="col" class="px-6 py-3">
 							Category
@@ -51,7 +51,7 @@
 								{{ $city['accentcity'] }}
 							</th>
 							<td class="px-6 py-4">
-								Sliver
+								{{ count(($city['comp_rel'])) }}
 							</td>
 							{{-- <td class="px-6 py-4">
 								Laptop
@@ -77,7 +77,7 @@
 
             @if (empty($stad))
             <div class="ml-4">
-                {{ $cities->links() }}
+                {{ $cities->links(data: ['scrollTo' => false]) }}
             </div>
             @endif
 		</div>
