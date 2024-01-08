@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <meta name="description" content="@yield('description', 'Default Description')">
+        <title>@yield('title', 'Dierentartsen NL')</title>        
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -29,7 +29,7 @@
         <!-- Styles -->
         @livewireStyles
     </head>
-    <body class="bg-[#f8f4f3]">
+    <body class="bg-[#f8f4f3] overflow-x-hidden">
         <div class="font-sans antialiased">
             <x-navbar/>
 

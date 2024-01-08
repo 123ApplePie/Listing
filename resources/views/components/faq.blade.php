@@ -11,6 +11,16 @@
                     <p class="text-neutral-500 text-base md:text-xl mt-3">
                         Het doel van een FAQ (Veelgestelde Vragen) is om gebruikers snel en gemakkelijk toegang te bieden tot antwoorden op de meest voorkomende vragen en om potentiële verwarring te verminderen, waardoor de gebruikerservaring wordt verbeterd en de klantenservicekosten kunnen worden verminderd. Het stelt bezoekers in staat om snel antwoorden te vinden op vragen die ze mogelijk hebben, waardoor ze efficiënter en zelfstandig door de website kunnen navigeren, wat uiteindelijk kan leiden tot hogere tevredenheid en conversiepercentages.
                     </p>
+                    {{-- <img src="https://dierenartsenkringhaaglanden.nl/images/vets/hero/hero-dierenkliniek-wassenaar.jpg" alt="Dierenzorg" class="mt-4 w-full h-auto rounded-3xl object-cover lg:max-h-none max-h-96"> --}}
+
+                <p class="text-base mt-8 text-gray-600 sm:text-xl lg:text-lg xl:text-xl">
+                <span class="font-bold">Missie:</span> 
+                Wij streven ernaar dierenliefhebbers moeiteloos toegang te bieden tot de beste zorg voor hun huisdieren, door middel van een betrouwbare online service.
+                <br><br>
+                <span class="font-bold">Visie:</span> 
+                Een wereld waarin elke huisdierbezitter eenvoudig hoogwaardige zorg kan vinden, ondersteund door een toegewijde gemeenschap van professionals en mede-liefhebbers.        
+                </p>
+
                 </div>
                 <div class="max-w-xl mx-auto mt-8">
                     <div class="py-5">

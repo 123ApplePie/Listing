@@ -179,8 +179,93 @@
  </section>     
     {{-- END SERVICE --}}
 
+ <section class="bg-white font-sans flex flex-col items-center justify-center py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+      <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
+        <div>
+          <a class="inline-flex px-1 py-1 gap-x-2 rounded-xl border border-gray-400 border-2 hover:border-orange-500 items-center text-sm font-semibold text-gray-600 space-x-1"
+            href="#">
+            <span
+              class="bg-orange-100 flex items-center justify-center gap-2 text-[#f84525] text-sm font-semibold px-2.5 py-0.5 rounded-lg dark:bg-blue-900 dark:text-blue-300">
+              Abonneer Nu</span>
+            <span>Blijf altijd up-to-date!</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="h-4 w-4">
+              <path d="M5 12h14"></path>
+              <path d="m12 5 7 7-7 7"></path>
+            </svg>
+          </a>
 
-    <section class="relative py-32 lg:py-36 bg-white">
+            <h1
+            class="mt-4 text-4xl tracking-tight font-extrabold text-gray-900 sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
+            <p class="sm:block text-[#1e3a8a]"><span class="text-[#f84525] bg-clip-text">Jouw directe lijn </span>
+              naar deskundige dierenzorg!</p>
+          </h1>
+          {{-- <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+            <button
+              class="inline-flex items-center text-white bg-orange-500 justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full sm:w-auto">
+              Get started now</button><button
+              class="inline-flex hover:ring-gray-400 hover:bg-gray-100 items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 mt-3 w-full sm:mt-0 sm:ml-3 sm:w-auto">
+              Request access
+            </button>
+          </div> --}}
+        </div>
+      </div>
+      <div class="mt-16 ml-6 sm:mt-24 lg:mt-0 lg:col-span-5">
+        {{-- <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+          <img src="https://dierenartsenkringhaaglanden.nl/images/vets/hero/hero-dierenkliniek-wassenaar.jpg" alt="Hero image" width="2350" height="2359" class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
+        </div> --}}
+        <img src="https://dierenartsenkringhaaglanden.nl/images/vets/hero/hero-dierenkliniek-wassenaar.jpg"
+        alt="Dierenzorg" class="w-full h-full object-cover h-full rounded-3xl">
+        {{-- <div class="mt-12 ml-8">
+          <div class="grid grid-cols-3 gap-6 sm:gap-6 xl:gap-8">
+            <div class="text-center sm:flex sm:items-center sm:justify-center">
+              <div class="sm:flex-shrink-0">
+                <div class="flow-root">
+                  <div
+                    class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-orange-600 bg-orange-100 rounded-full">
+                    Active User
+                  </div>
+                  <p class="text-4xl font-bold text-gray-900">16K+</p>
+                </div>
+              </div>
+              <!-- <div class="mt-3 sm:mt-0 sm:ml-3">
+                </div> -->
+            </div>
+            <div class="text-center sm:flex sm:items-center sm:justify-center">
+              <div class="sm:flex-shrink-0">
+                <div class="flow-root">
+                  <div
+                    class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-orange-600 bg-orange-100 rounded-full">
+                    Episodes
+                  </div>
+                  <p class="text-4xl font-bold ml-4 text-gray-900">28K+</p>
+                </div>
+              </div>
+              <!-- <div class="mt-3 sm:mt-0 sm:ml-3">
+              </div> -->
+            </div>
+            <div class="text-center sm:flex sm:items-center sm:justify-center">
+              <div class="sm:flex-shrink-0">
+                <div class="flow-root">
+                  <div
+                    class="border w-fit transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent hover:bg-primary/80 inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-orange-600 bg-orange-100 rounded-full">
+                    Series
+                  </div>
+                  <p class="text-4xl font-bold ml-4 text-gray-900">18+</p>
+                </div>
+              </div>
+              <!-- <div class="mt-3 sm:mt-0 sm:ml-3">
+              </div> -->
+            </div>
+          </div>
+        </div> --}}
+      </div>
+    </div>
+  </div>
+ </section>
+    {{-- <section class="relative py-32 lg:py-36 bg-white">
       <div
           class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-10 lg:gap-12">
           <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 hidden lg:block">
@@ -198,48 +283,13 @@
                   <span class="text-[#f84525] bg-clip-text">Jouw directe lijn </span>
                       naar deskundige dierenzorg!
               </h1>
-              {{-- <p class="mt-8 text-gray-700">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores repellat perspiciatis aspernatur
-                  quis voluptatum porro incidunt,
-                  libero sequi quos eos velit
-              </p> --}}
-              {{-- <div class="mt-10  w-full flex max-w-md mx-auto lg:mx-0">
-                  <div class="flex sm:flex-row flex-col gap-5 w-full">
-                      <form action="#"
-                          class="py-1 pl-6 w-full pr-1 flex gap-3 items-center text-gray-600 shadow-lg shadow-gray-200/20
-                              border border-gray-200 bg-gray-100 rounded-full ease-linear focus-within:bg-white  focus-within:border-blue-600">
-                          <span class="min-w-max pr-2 border-r border-gray-200">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24"
-                                  stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                  <path stroke-linecap="round" stroke-linejoin="round"
-                                      d="M21.75 9v.906a2.25 2.25 0 01-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 001.183 1.981l6.478 3.488m8.839 2.51l-4.66-2.51m0 0l-1.023-.55a2.25 2.25 0 00-2.134 0l-1.022.55m0 0l-4.661 2.51m16.5 1.615a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V8.844a2.25 2.25 0 011.183-1.98l7.5-4.04a2.25 2.25 0 012.134 0l7.5 4.04a2.25 2.25 0 011.183 1.98V19.5z" />
-                              </svg>
-                          </span>
-                          <input type="email" name="" id="" placeholder="johndoe@gmail.com"
-                              class="w-full py-3 outline-none bg-transparent">
-                          <button class="flex text-white justify-center items-center w-max min-w-max sm:w-max px-6 h-12 rounded-full outline-none relative overflow-hidden border duration-300 ease-linear
-                                  after:absolute after:inset-x-0 after:aspect-square after:scale-0 after:opacity-70 after:origin-center after:duration-300 after:ease-linear after:rounded-full after:top-0 after:left-0 after:bg-[#172554] hover:after:opacity-100 hover:after:scale-[2.5] bg-blue-600 border-transparent hover:border-[#172554]">
-                              <span class="hidden sm:flex relative z-[5]">
-                                  Get Started
-                              </span>
-                              <span class="flex sm:hidden relative z-[5]">
-                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                      stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                                      <path stroke-linecap="round" stroke-linejoin="round"
-                                          d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-                                  </svg>
-                              </span>
-                          </button>
-                      </form>
-                  </div>
-              </div> --}}
           </div>
           <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
               <img src="https://dierenartsenkringhaaglanden.nl/images/vets/hero/hero-dierenkliniek-wassenaar.jpg" alt="Hero image" width="2350" height="2359"
                   class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
           </div>
       </div>
-  </section>
+  </section> --}}
   
 
 {{-- KAART --}}

@@ -9,14 +9,18 @@ use App\Models\Region;
 
 class IndexController extends Controller
 {
-    public function details($id) {
-        $info = Company::where('id',$id)
+    public function details($company) {
+        $info = Company::where('company',$company)
                         ->with('city_rel')
                         ->with('city_rel.regio_rel')
                         ->get();
 
+        $title = $info->first()->company;
+        $description = "De gegevens en informatie van " . $info->first()->company;
+        
         return view('guest.details',[
-            'info'=>$info
+            'info'=>$info,
+            'title'=>$title
         ]);
     }
 
@@ -35,21 +39,27 @@ class IndexController extends Controller
         $region_code = $region[0]['region_code'];
         // dd($region_code);
 
+        $title = $region->first()->region;
+        $description = "Alle dierenartsen in " . $region->first()->region;
+
         return view('guest.provincie',[
             'region_code'=>$region_code,
-            'region'=>$region
+            'region'=>$region,
+            'title'=>$title
         ]);
     }
 
     public function percity($regio_slug, $city){
-        // dd($regio_slug);
-        // dd($city);
         $regio = $regio_slug;
         $stad = $city;
 
+        $title = $stad;
+        $description = "Alle dierenartsen in " . $stad;
+
         return view('guest.percity',[
             'regio'=>$regio,
-            'stad'=>$stad
+            'stad'=>$stad,
+            'title'=>$title
         ]);
     }
 }

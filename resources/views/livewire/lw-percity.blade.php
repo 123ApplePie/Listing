@@ -42,7 +42,7 @@
 							{{ $company['city_rel']['accentcity'] }}
 						</td>
 						<td class="px-6 py-4 text-right">
-							<a href="{{ '/details/'.$company['id'] }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Meer Informatie</a>
+							<a href="{{ '/details/'.$company['company'] }}" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Meer Informatie</a>
 						</td>
 					</tr>
                     @endforeach

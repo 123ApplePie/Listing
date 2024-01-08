@@ -24,7 +24,7 @@ Route::view('/blog','guest.blog');
 Route::view('/about','guest.about');
 
 Route::view('/contact','guest.contact');
-Route::get('/details/{id}',[IndexController::class,'details']);
+Route::get('/details/{company}',[IndexController::class,'details']);
 
 Route::get('/{slug}',[IndexController::class,'provincie']);
 Route::get('/{regio_slug}/{city}', [IndexController::class, 'percity']);
