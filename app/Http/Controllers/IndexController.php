@@ -9,6 +9,36 @@ use App\Models\Region;
 
 class IndexController extends Controller
 {
+    public function about() {
+        $title = "Over Ons";
+        $description = "Leer ons beter kennen!";
+
+        return view('guest.about',[
+            'title'=>$title,
+            'description'=>$description
+        ]);
+    }
+
+    public function contact() {
+        $title = "Contact Ons";
+        $description = "Contact Ons";
+
+        return view('guest.contact',[
+            'title'=>$title,
+            'description'=>$description
+        ]);
+    }
+
+    public function blog() {
+        $title = "Blogs & Nieuws";
+        $description = "Blogs & Nieuws";
+
+        return view('guest.blog',[
+            'title'=>$title,
+            'description'=>$description
+        ]);
+    }
+
     public function details($company) {
         $info = Company::where('company',$company)
                         ->with('city_rel')
@@ -20,7 +50,8 @@ class IndexController extends Controller
         
         return view('guest.details',[
             'info'=>$info,
-            'title'=>$title
+            'title'=>$title,
+            'description'=>$description
         ]);
     }
 
@@ -45,7 +76,8 @@ class IndexController extends Controller
         return view('guest.provincie',[
             'region_code'=>$region_code,
             'region'=>$region,
-            'title'=>$title
+            'title'=>$title,
+            'description'=>$description
         ]);
     }
 
@@ -59,7 +91,18 @@ class IndexController extends Controller
         return view('guest.percity',[
             'regio'=>$regio,
             'stad'=>$stad,
-            'title'=>$title
+            'title'=>$title,
+            'description'=>$description
+        ]);
+    }
+
+    public function register() {
+        $title = "Registreren";
+        $description = "Registreren als dierenarts in NL";
+
+        return view('guest.register',[
+            'title'=>$title,
+            'description'=>$description
         ]);
     }
 }

@@ -1,5 +1,5 @@
 <header class="header">
-    <a href="" class="logo">Logo</a>
+    <a href="/" class="logo">Logo</a>
 
     <input type="checkbox" name="" id="check">
     <label for="check" class="icons">
@@ -10,9 +10,10 @@
     <nav class="navbar">
         <a href="/" class="hover:text-[#f84525]" style="--i:0;">Home</a>
         <a href="/blog" class="hover:text-[#f84525]" style="--i:1;">Blog</a>
-        <a href="/about" class="hover:text-[#f84525]" style="--i:2;">Over Ons</a>
+        <a href="/over-ons" class="hover:text-[#f84525]" style="--i:2;">Over Ons</a>
         <a href="/contact" class="hover:text-[#f84525]" style="--i:3;">Contact</a>
-        <button onclick="openModal('main-modal')" class="bg-[#f84525] ml-8 text-white font-semibold px-4 py-2 rounded-3xl" style="--i:4;"><i class='bx bx-plus-circle'></i> Registreren</button>
+        <a href="/registreren" class="bg-[#f84525] ml-8 text-white font-semibold px-4 py-2 rounded-3xl" style="--i:4;"><i class='bx bx-plus-circle'></i> Registreren</a>
+        {{-- <button onclick="openModal('main-modal')" class="bg-[#f84525] ml-8 text-white font-semibold px-4 py-2 rounded-3xl" style="--i:4;"><i class='bx bx-plus-circle'></i> Registreren</button> --}}
     </nav>
 </header>
 

@@ -49,8 +49,9 @@
                         </div>
                     </div>
                 </a>
-                <hr>
                 @if (!empty($stad) || !empty($search))
+                <hr>
+
                 <span class="pl-4 italic text-[#f84525]">Resultaat: {{ count($results) }} gevonden</span>
                     @foreach ($results as $result)
                     <a href="{{ '/details/'.$result['id'] }}" class="w-full flex p-3 pl-4 items-center hover:bg-red-100 rounded-lg cursor-pointer">

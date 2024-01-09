@@ -1,4 +1,7 @@
 <x-guest-layout>
+  @section('canonical')
+    <link rel="canonical" href="/" />
+  @endsection
 
     <livewire:lw-hero/>
 
@@ -185,16 +188,16 @@
       <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
         <div>
           <a class="inline-flex px-1 py-1 gap-x-2 rounded-xl border border-gray-400 border-2 hover:border-orange-500 items-center text-sm font-semibold text-gray-600 space-x-1"
-            href="#">
+            href="/registreren">
             <span
               class="bg-orange-100 flex items-center justify-center gap-2 text-[#f84525] text-sm font-semibold px-2.5 py-0.5 rounded-lg dark:bg-blue-900 dark:text-blue-300">
-              Abonneer Nu</span>
-            <span>Blijf altijd up-to-date!</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              Registreer Nu</span>
+            {{-- <span>Blijf altijd up-to-date!</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" class="h-4 w-4">
               <path d="M5 12h14"></path>
               <path d="m12 5 7 7-7 7"></path>
-            </svg>
+            </svg> --}}
           </a>
 
             <h1

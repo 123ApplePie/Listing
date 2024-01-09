@@ -1,4 +1,10 @@
 <x-guest-layout>
+  @section('title', isset($metaTitle) ? $metaTitle : $title)
+  @section('description', isset($metaDescription) ? $metaDescription : $description)
+
+  @section('canonical')
+    <link rel="canonical" href="/contact" />
+  @endsection
 
     <section class="py-24 border border-b-[#f84525] border-b-8 flex items-center justify-center h-1/2 w-screen bg-cover relative" style="background-image: url('img/slider-kat-1.jpg');">
       <!-- Dark overlay -->

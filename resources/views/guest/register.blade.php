@@ -1,8 +1,12 @@
 <x-guest-layout>
-    @section('title', isset($metaTitle) ? $metaTitle : 'Dierenartsen in '.$title)
-    @section('description', isset($metaDescription) ? $metaDescription : 'Default Description')
+    @section('title', isset($metaTitle) ? $metaTitle : $title)
+    @section('description', isset($metaDescription) ? $metaDescription : $description)
   
-    <section class="py-24 border border-b-[#f84525] border-b-8 flex items-center justify-center h-1/2 w-screen bg-cover relative" style="background-image: url('/img/slider-kat-1.jpg');">
+    @section('canonical')
+      <link rel="canonical" href="/registreren" />
+    @endsection
+
+    <section class="py-24 border border-b-[#f84525] border-b-8 flex items-center justify-center h-1/2 w-screen bg-cover relative" style="background-image: url('img/slider-kat-1.jpg');">
         <!-- Dark overlay -->
         <div class="absolute inset-0 bg-black opacity-60"></div>
     
@@ -13,7 +17,7 @@
           <div class="flex justify-center items-center">
               <!-- Child div with width set to half the parent's width -->
               <p class="px-4 py-2 text-lg font-medium text-white bg-[#f84525] rounded-3xl">
-                  Dierenartsen in {{ $stad }}
+                  Registreren
               </p>
               <!-- Paragraph with text styling, background color, and rounded corners -->
           </div>
@@ -32,9 +36,7 @@
           </div>
       </div>  
   </section>
-
-<div class="">
-    <livewire:lw-percity :regio="$regio" :stad="$stad"/>
-</div>
+  
+  <livewire:lw-registerform/>
 
 </x-guest-layout>

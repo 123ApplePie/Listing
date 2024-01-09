@@ -2,6 +2,10 @@
   @section('title', isset($metaTitle) ? $metaTitle : 'Dierenkliniek: '.$title)
   @section('description', isset($metaDescription) ? $metaDescription : 'Default Description')
   
+  @section('canonical')
+    <link rel="canonical" href="/details" />
+  @endsection
+
   <section class="py-24 border border-b-[#f84525] border-b-8 flex items-center justify-center h-1/2 w-screen bg-cover relative" style="background-image: url('/img/slider-kat-1.jpg');">
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black opacity-60"></div>

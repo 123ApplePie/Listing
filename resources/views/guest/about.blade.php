@@ -1,4 +1,11 @@
 <x-guest-layout>
+    @section('title', isset($metaTitle) ? $metaTitle : $title)
+    @section('description', isset($metaDescription) ? $metaDescription : $description)
+  
+    @section('canonical')
+        <link rel="canonical" href="/over-ons" />
+    @endsection
+
     <section class="py-24 border border-b-[#f84525] border-b-8 flex items-center justify-center h-1/2 w-screen bg-cover relative" style="background-image: url('img/slider-kat-1.jpg');">
         <!-- Dark overlay -->
         <div class="absolute inset-0 bg-black opacity-60"></div>
@@ -48,8 +55,7 @@
                         <span class="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate__animated animate__flash">different</span>
                     </h2> --}}
                     <p class="text-base text-gray-700">
-                        Welkom! <br><br>
-
+                        <br>
                         Wij begrijpen hoe belangrijk het welzijn van je huisdier voor jou is. Daarom hebben we ons toegewijd aan het vereenvoudigen van het proces om een betrouwbare dierenarts te vinden, waar dan ook in Nederland. Onze missie is om eigenaren van gezelschapsdieren te helpen snel en moeiteloos toegang te krijgen tot hoogwaardige dierenzorg, zodat jouw harige vriend de beste medische aandacht kan krijgen die hij verdient.
                         <br><br>
                         Wat maakt ons uniek? We hebben een uitgebreid netwerk van dierenartspraktijken in heel Nederland samengebracht, waardoor we een gevarieerde selectie van hooggekwalificeerde professionals kunnen aanbieden. Of je nu op zoek bent naar algemene gezondheidscontroles, vaccinaties, spoedeisende zorg of gespecialiseerde behandelingen, wij staan klaar om je te helpen de perfecte dierenarts te vinden die aan de specifieke behoeften van jouw huisdier voldoet.

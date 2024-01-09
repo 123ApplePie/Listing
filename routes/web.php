@@ -18,16 +18,18 @@ Route::get('/', function () {
     return view('guest.index');
 });
 
-Route::get('/map',[IndexController::class,'map']);
 Route::view('/test','test');
-Route::view('/blog','guest.blog');
-Route::view('/about','guest.about');
 
-Route::view('/contact','guest.contact');
-Route::get('/details/{company}',[IndexController::class,'details']);
+Route::get('/map',[IndexController::class,'map']);
+Route::get('/blog',[IndexController::class,'blog'])->name('blog');
+Route::get('/over-ons',[IndexController::class,'about'])->name('about');
+route::get('/registreren',[IndexController::class,'register'])->name('register');
+
+Route::get('/contact',[IndexController::class,'contact'])->name('contact');
+Route::get('/details/{company}',[IndexController::class,'details'])->name('details');
 
 Route::get('/{slug}',[IndexController::class,'provincie']);
-Route::get('/{regio_slug}/{city}', [IndexController::class, 'percity']);
+Route::get('/{regio_slug}/{city}', [IndexController::class, 'percity'])->name('percity');
 
 // Route::middleware([
 //     'auth:sanctum',
